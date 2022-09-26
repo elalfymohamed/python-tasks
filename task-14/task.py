@@ -51,11 +51,9 @@ def numberAcceptDivision():
     start = int(input("Enter Start Number: "))
     end = int(input("Enter End Number: "))
 
-    for num_start in range(0, start + 1):
-        for num_end in range(1, end + 1):
-            if num_start % num_end:
-                print(f"{num_start} % {num_end} = {num_start % num_end}")
-        print("--------------")
+    for num in range(0, start + 1):
+        if num % end:
+            print(num)
 
 
 # numberAcceptDivision()
@@ -65,16 +63,9 @@ def numbersDivision():
     start = int(input("Enter Start Number: "))
     end = int(input("Enter End Number: "))
 
-    for num_start in range(1, start + 1):
-        for num_end in range(1, 100):
-            if num_start % num_end:
-                print(f"{num_start} % {num_end} = {num_start % num_end}")
-        print("--------------")
-    for num_start in range(1, end + 1):
-        for num_end in range(1, 100 + 1):
-            if num_start % num_end:
-                print(f"{num_start} % {num_end} = {num_start % num_end}")
-        print("---------------------------")
+    for num in range(0, 100):
+        if num % start or num % end:
+            print(num)
 
 
 # numbersDivision()
@@ -163,19 +154,19 @@ class Game:
     def numberAcceptDivision(self, start, end):
         for num_start in range(0, start + 1):
             for num_end in range(1, end + 1):
-                if num_start % num_end:
+                if num_start % num_end == 0:
                     print(f"{num_start} % {num_end} = {num_start % num_end}")
             print("--------------")
 
     def numbersDivision(self, start, end):
         for num_start in range(1, start + 1):
             for num_end in range(1, 100):
-                if num_start % num_end:
+                if num_start % num_end  ==0:
                     print(f"{num_start} % {num_end} = {num_start % num_end}")
             print("--------------")
         for num_start in range(1, end + 1):
             for num_end in range(1, 100 + 1):
-                if num_start % num_end:
+                if num_start % num_end == 0:
                     print(f"{num_start} % {num_end} = {num_start % num_end}")
             print("---------------------------")
 
