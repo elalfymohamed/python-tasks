@@ -161,7 +161,7 @@ class Game:
     def numbersDivision(self, start, end):
         for num_start in range(1, start + 1):
             for num_end in range(1, 100):
-                if num_start % num_end  ==0:
+                if num_start % num_end == 0:
                     print(f"{num_start} % {num_end} = {num_start % num_end}")
             print("--------------")
         for num_start in range(1, end + 1):
