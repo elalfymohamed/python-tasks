@@ -26,8 +26,6 @@ def downloadImage():
 
 downloadImage()
 
- # test url image
+# test url image
 
 # https://toppng.com/uploads/preview/cigar-hand-transparent-png-11519552420rdpzltbxkv.png
-
-
