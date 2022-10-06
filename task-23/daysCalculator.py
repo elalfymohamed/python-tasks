@@ -75,4 +75,3 @@ if __name__ == "__main__":
         daysCalculatorInDate()
     else:
         print("please try again")
-
